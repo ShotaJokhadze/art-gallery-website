@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 576px;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+.background.tablet {
+    display: none;
+}
+
+.background.desktop {
+    display: none;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 5.5rem;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.loc.bl {
+    background: #151515;
+    width: 12.75rem;
+    height: calc(72rem/16);
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(20rem/16);
+    letter-spacing: 3.64px;
+    line-height: calc(23.94rem/16);
+}
+
+.loc.br {
+    background: #D5966C;
+    width: calc(56rem/16);
+    height: calc(72rem/16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loca {
+    background: #151515;
+    padding: 3rem 1rem 3.5rem 1rem;
+}
+
+h1 {
+    color: white;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    color: #D5966C;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    color: white;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+
+li:last-child {
+    margin-bottom: 20px;
+}
+
+br {
+    display: none;
+}
+
+.locat {
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+.footer {
+    background: #D5966C;
+    padding: 3rem 2rem;
+}
+
+.logo-n2 {
+    margin-bottom: calc(38rem/16);
+    height: 40px;
+    width: 110.05px;
+}
+
+p.foot {
+    margin-bottom: calc(38rem/16);
+    font-size: 1rem;
+    line-height: 1.625rem;
+    font-family: 'Outfit', sans-serif;
+    color: #151515;
+}
+
+.icon {
+    margin-right: calc(20rem/16);
+    filter: invert(90%) sepia(0%) saturate(7462%) hue-rotate(81deg) brightness(117%) contrast(111%);
+}
+
+@media only screen and (min-width: 710px) {
+    .background {
+        display: none;
+    }
+
+    .background.tablet {
+        display: inline;
+    }
+
+    .btn {
+        left: 40px;
+    }
+
+    .loca {
+        display: flex;
+        padding: 88px 40px 80px;
+    }
+
+    br {
+        display: block;
+    }
+
+    .h1 {
+        margin-right: 68px;
+    }
+
+    .footer {
+        display: flex;
+        padding: 0;
+        padding-top: 56px;
+        align-items: flex-start;
+    }
+
+    .logo-n2 {
+        margin-bottom: 120px;
+        margin-left: 40px;
+        margin-right: 65px;
+
+    }
+
+    .foot {
+        margin-bottom: 0;
+        margin-right: 133px;
+    }
+
+    .social {
+        display: flex;
+    }
+
+    .icon:last-child {
+        margin-right: 40px;
+    }
+
+    .icon:hover {
+        cursor: pointer;
+        filter: none;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .background.tablet {
+        display: none;
+    }
+
+    .background.desktop {
+        display: inline;
+    }
+
+    .btn {
+        left: 140px;
+    }
+    
+    .btn:hover .loc.bl{
+        background-color: #D5966C;
+    }
+    
+    .btn:hover .loc.br{
+        background-color: #151515;
+    }
+
+    .loca {
+        padding: 104px 165px;
+        justify-content: space-between;
+    }
+
+    .h1 {
+        margin-right: 220px;
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .locat {
+        max-width: 540px;
+        font-weight: 300;
+            font-size: 22px;
+            line-height: 32px;
+    }
+
+
+    .footer {
+        padding-top: 80px;
+        padding-left: 165px;
+        padding-right: 165px;
+    }
+
+    .logo-n2 {
+        margin-bottom: calc(38rem/16);
+        height: 58px;
+        width: 160px;
+        margin-bottom: 106px;
+        /* margin-left: 165px; */
+        margin-right: 140px;
+    }
+
+    p.foot {
+        /* margin-bottom: calc(38rem/16); */
+        font-size: 18px;
+        line-height: 1.625rem;
+        font-family: 'Outfit', sans-serif;
+        color: #151515;
+        margin-right: 280px;
+        max-width: 430px;
+    }
+}
